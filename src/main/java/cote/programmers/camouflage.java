@@ -1,11 +1,8 @@
-//package cote.programmers;
-//
 //import java.util.HashMap;
 //import java.util.Iterator;
 //
 //class Solution {
 //    public int solution(String[][] clothes) {
-//
 //        // 1. 옷을 종류별로 구분하기
 //        HashMap<String, Integer> map = new HashMap<>();
 //        for (String[] clothe : clothes) {
@@ -23,7 +20,3 @@
 //        // 3. 아무종류의 옷도 입지 않는 경우 제외하기
 //        return answer - 1;
 //    }
-//}
-//
-//public class camouflage {
-//}

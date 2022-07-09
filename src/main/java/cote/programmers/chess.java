@@ -13,9 +13,8 @@ class Main {
         }
 
         return Math.min(whiteSol, 64 - whiteSol);
+
     }
-
-
     public static void main(String[] args) {
         // 0. input 받기
         Scanner sc = new Scanner(System.in);
@@ -24,25 +23,17 @@ class Main {
         sc.nextLine();
 
         String[] board = new String[row];
-        for (int i = 0; i < row; i++)board[i] = sc.nextLine();
+        for (int i = 0; i < row; i++) board[i] = sc.nextLine();
 
         // 1. 체스판 자르기
         int sol = Integer.MAX_VALUE;
         for (int i = 0; i <= row - 8; i++) {
             for (int j = 0; j <= col - 8; j++) {
-                // 2. 현 체스판의 ㅊ푀소 비용 구하기
+                // 2. 현 체스판의 최소 비용 구하기
                 int curSol = getSolution(i, j, board);
                 // 3. 전체 최적의 값과 비교하여 갱신하기
                 if (sol > curSol) sol = curSol;
             }
         }
-
-        System.out.println(sol);
-        sc.close();
-
-
     }
-
-
-
 }
