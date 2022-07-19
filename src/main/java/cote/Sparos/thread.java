@@ -1,5 +1,5 @@
 package cote.Sparos;
 
-public class event {
+public class thread {
 
 }

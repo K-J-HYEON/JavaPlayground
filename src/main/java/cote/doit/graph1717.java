@@ -39,6 +39,7 @@ public class graph1717 {
             return a;
         else
             return parent[a] = find(parent[a]); // 재귀함수의 형태로 구현
+
     }
     public static boolean checkSame(int a, int b) { // 두 원소가 같은 집합인지 확인
         a = find(a);

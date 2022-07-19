@@ -12,7 +12,7 @@ public class graph1707 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine());
         for (int t = 0; t < N; t++) {
-            String[] s = br.readLine().split(" ");
+            String[] s = br.readLine().split("");
             int V = Integer.parseInt(s[0]);
             int E = Integer.parseInt(s[1]);
             A = new ArrayList[V + 1];
@@ -23,13 +23,16 @@ public class graph1707 {
                 A[i] = new ArrayList<Integer>();
             }
             for (int i = 0; i < E; i++) { // 인접 리스트로 그래프 저장
-                s = br.readLine().split(" ");
+                s = br.readLine().split("");
                 int Start = Integer.parseInt(s[0]);
                 int End = Integer.parseInt(s[1]);
                 A[Start].add(End);
                 A[End].add(Start);
             }
-            for (int i = 1; i <= V; i++) { // 주어진 그래프가 하나로 연결되어 있다는 보장이 없으므로 모든 정점에서 수행
+
+            // 모든 노드에서 DFS 실행 해야함
+            for (int i = 1; i <= V; i++)
+            { // 주어진 그래프가 하나로 연결되어 있다는 보장이 없으므로 모든 정점에서 수행
                 if (IsEven)
                     DFS(i);
                 else
