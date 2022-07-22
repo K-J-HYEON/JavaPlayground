@@ -1,6 +1,7 @@
 package cote.doit;
 
 import java.util.Arrays;
+
 import java.util.Scanner;
 
 public class boj1920 {
@@ -33,6 +34,7 @@ public class boj1920 {
             }
             if(find) System.out.println(1);
             else System.out.println(0);
+
         }
     }
 }
