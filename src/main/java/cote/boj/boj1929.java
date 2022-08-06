@@ -1,3 +1,5 @@
+package cote.boj;
+
 import java.util.Scanner;
 public class boj1929 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package cote.doit;
+package cote.boj;
 
 import java.util.Scanner;
 
