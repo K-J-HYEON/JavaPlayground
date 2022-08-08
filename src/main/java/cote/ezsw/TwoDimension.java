@@ -1,8 +1,6 @@
 package cote.ezsw;
-
 import java.util.Scanner;
-
-public class twoDimension {
+public class TwoDimension {
     static int Row, Col;
     static int[][] Board = new int[100][100];
 

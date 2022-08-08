@@ -2,7 +2,7 @@ package cote.ezsw;
 
 import java.util.Scanner;
 
-public class arrayInput {
+public class ArrayInput {
     static int N;
     static int[] Score = new int[100];
 
